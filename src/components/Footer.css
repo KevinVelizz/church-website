@@ -1,0 +1,74 @@
+/* Footer: una columna en celular, varias en pantallas grandes. */
+
+.footer {
+  background: var(--color-primario);
+  color: #e8edf3;
+}
+
+.footer-contenido {
+  max-width: var(--ancho-maximo);
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.footer-nombre,
+.footer-titulo {
+  color: #ffffff;
+}
+
+.footer-nombre {
+  font-size: 1.4rem;
+}
+
+.footer-titulo {
+  font-size: 1.05rem;
+}
+
+.footer-lista {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-lista li {
+  margin-bottom: 0.4rem;
+}
+
+.footer-direccion {
+  font-style: normal;
+}
+
+.footer-direccion p {
+  margin-bottom: 0.4rem;
+}
+
+.footer a {
+  color: #e8edf3;
+}
+
+.footer a:hover {
+  color: #ffffff;
+}
+
+.footer-copyright {
+  margin: 0;
+  padding: 1rem 1.5rem;
+  text-align: center;
+  font-size: 0.875rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+@media (min-width: 600px) {
+  .footer-contenido {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 960px) {
+  .footer-contenido {
+    grid-template-columns: 2fr 2fr 2fr 1fr 1fr;
+  }
+}

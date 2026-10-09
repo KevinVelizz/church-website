@@ -1,12 +1,20 @@
-/* Estilos del componente App. */
+/* Estructura general: Header arriba, contenido al medio, Footer abajo. */
 
-.en-construccion {
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-principal {
+  flex: 1;
+  width: 100%;
   max-width: var(--ancho-maximo);
   margin: 0 auto;
   padding: 4rem 1.5rem;
   text-align: center;
 }
 
-.en-construccion p {
+.app-principal p {
   color: var(--color-texto-suave);
 }
