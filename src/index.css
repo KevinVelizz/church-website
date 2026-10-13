@@ -1,5 +1,9 @@
 /* Estilos globales: se aplican a todo el sitio. */
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   /* Colores */
   --color-fondo: #faf8f4;
@@ -8,6 +12,7 @@
   --color-texto-suave: #5b616b;
   --color-primario: #1f3a5f;
   --color-acento: #b8862f;
+  --color-acento-texto: #8a6116;
   --color-borde: #e4dfd5;
 
   /* Tipografías */
@@ -55,4 +60,51 @@ img {
 
 a {
   color: var(--color-primario);
+}
+
+/* Clases reutilizables */
+
+.contenedor {
+  width: 100%;
+  max-width: var(--ancho-maximo);
+  margin: 0 auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.pagina {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.seccion {
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+}
+
+.boton {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  border: 2px solid transparent;
+  border-radius: var(--radio);
+}
+
+.boton-primario {
+  background: var(--color-acento);
+  color: #1c1608;
+}
+
+.boton-primario:hover {
+  background: #cf9b3d;
+}
+
+.boton-secundario {
+  border-color: #ffffff;
+  color: #ffffff;
+}
+
+.boton-secundario:hover {
+  background: rgba(255, 255, 255, 0.15);
 }
