@@ -8,13 +8,4 @@
 
 .app-principal {
   flex: 1;
-  width: 100%;
-  max-width: var(--ancho-maximo);
-  margin: 0 auto;
-  padding: 4rem 1.5rem;
-  text-align: center;
-}
-
-.app-principal p {
-  color: var(--color-texto-suave);
 }
