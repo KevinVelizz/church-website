@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import Hero from '../components/Hero'
+import VerseOfTheDay from '../components/VerseOfTheDay'
 import { iglesia } from '../data/site'
 import './Home.css'
 
@@ -34,6 +35,8 @@ function Home() {
           Ver horarios
         </a>
       </Hero>
+
+      <VerseOfTheDay />
 
       <section className="contenedor seccion">
         <h2 className="home-titulo">Bienvenidos</h2>

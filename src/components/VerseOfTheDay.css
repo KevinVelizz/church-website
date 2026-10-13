@@ -1,0 +1,71 @@
+/* Versículo del día. */
+
+.versiculo {
+  background: var(--color-superficie);
+  border-bottom: 1px solid var(--color-borde);
+  text-align: center;
+}
+
+.versiculo-titulo {
+  font-family: var(--fuente-texto);
+  font-size: 0.95rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--color-acento-texto);
+}
+
+.versiculo-cita {
+  max-width: 45rem;
+  margin: 0 auto 1.5rem;
+}
+
+.versiculo-cita blockquote {
+  margin: 0;
+}
+
+.versiculo-cita blockquote p {
+  margin-bottom: 0.75rem;
+  font-family: var(--fuente-titulos);
+  font-size: clamp(1.25rem, 3.5vw, 1.75rem);
+  line-height: 1.5;
+  color: var(--color-primario);
+}
+
+.versiculo-cita figcaption {
+  font-weight: bold;
+  color: var(--color-texto-suave);
+}
+
+.versiculo-boton {
+  padding: 0.6rem 1.25rem;
+  font: inherit;
+  font-weight: bold;
+  color: var(--color-primario);
+  background: none;
+  border: 2px solid var(--color-primario);
+  border-radius: var(--radio);
+  cursor: pointer;
+}
+
+.versiculo-boton:hover {
+  color: #ffffff;
+  background: var(--color-primario);
+}
+
+.versiculo-contexto {
+  max-width: 40rem;
+  margin: 1.5rem auto 0;
+  padding: 1.25rem 1.5rem;
+  text-align: left;
+  background: var(--color-fondo);
+  border-left: 4px solid var(--color-acento);
+  border-radius: var(--radio);
+}
+
+.versiculo-contexto h3 {
+  font-size: 1.1rem;
+}
+
+.versiculo-contexto p {
+  margin: 0;
+}
