@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Link, NavLink } from 'react-router-dom'
 import { enlacesNavegacion, iglesia } from '../data/site'
 import './Header.css'
 
@@ -9,12 +10,16 @@ function Header() {
     setMenuAbierto(!menuAbierto)
   }
 
+  function cerrarMenu() {
+    setMenuAbierto(false)
+  }
+
   return (
     <header className="header">
       <div className="header-contenido">
-        <a href="/" className="header-marca">
+        <Link to="/" className="header-marca" onClick={cerrarMenu}>
           {iglesia.nombre}
-        </a>
+        </Link>
 
         <button
           type="button"
@@ -37,9 +42,13 @@ function Header() {
           <ul className="header-lista">
             {enlacesNavegacion.map((enlace) => (
               <li key={enlace.ruta}>
-                <a href={enlace.ruta} className="header-enlace">
+                <NavLink
+                  to={enlace.ruta}
+                  className="header-enlace"
+                  onClick={cerrarMenu}
+                >
                   {enlace.texto}
-                </a>
+                </NavLink>
               </li>
             ))}
           </ul>

@@ -78,6 +78,13 @@
   color: var(--color-acento);
 }
 
+/* NavLink agrega la clase "active" al enlace de la página actual */
+
+.header-enlace.active {
+  color: var(--color-primario);
+  font-weight: bold;
+}
+
 /* Desde tablets en adelante: menú siempre visible y en fila */
 
 @media (min-width: 768px) {

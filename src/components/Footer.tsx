@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { horarios } from '../data/schedules'
 import { enlacesNavegacion, iglesia, redesSociales } from '../data/site'
 import './Footer.css'
@@ -42,7 +43,7 @@ function Footer() {
           <ul className="footer-lista">
             {enlacesNavegacion.map((enlace) => (
               <li key={enlace.ruta}>
-                <a href={enlace.ruta}>{enlace.texto}</a>
+                <Link to={enlace.ruta}>{enlace.texto}</Link>
               </li>
             ))}
           </ul>
