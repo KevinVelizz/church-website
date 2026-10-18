@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import Hero from '../components/Hero'
+import Schedule from '../components/Schedule'
 import VerseOfTheDay from '../components/VerseOfTheDay'
 import { iglesia } from '../data/site'
 import './Home.css'
@@ -57,7 +58,12 @@ function Home() {
 
       <section id="horarios" className="contenedor seccion home-horarios">
         <h2 className="home-titulo">Horarios de reuniones</h2>
-        <p className="home-intro">Esta sección se completa en la Etapa 7.</p>
+        <p className="home-intro">
+          Te esperamos en cualquiera de nuestras reuniones. No hace falta
+          avisar: vení como estás.
+        </p>
+
+        <Schedule />
       </section>
     </>
   )
